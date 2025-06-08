@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang = "en">
+import turtle
 
-<head> 
+turtle.speed(3)
+turtle.bgcolor("black")
+turtle.pensize(3)
+def func():
+    for i in range(200):
+        turtle.right(1)
+        turtle.forward(1)
+turtle.color("red", "red")
+turtle.begin_fill()
+turtle.left(140)
+turtle.forward(111.65)
+func()
+turtle.left(120)
+func()
+turtle.forward(111.65)
+turtle.end_fill()
 
-</head>
+turtle.color("white")  # Color del texto
+turtle.penup()  # Levantar el lápiz para escribir sin dibujar líneas
+turtle.goto(-50, -50)  # Posicionar el texto debajo del corazón
+turtle.write("Te amo mucho Carlitos, atte. Lucy", align="center", font=("Times New Roman", 16, "bold"))
 
-<body> 
-holi
-</body>
-
-</html>
+turtle.hideturtle()
+turtle.done()
